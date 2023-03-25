@@ -1,30 +1,51 @@
- program to check whether a character is uppercase 
-  * or lowercase using inbuilt library functions
-  *  */
+/**
+
+ * C program to check whether a character is uppercase 
+
+ * or lowercase using inbuilt library functions
+
+ */
 
 #include <stdio.h>
+
 #include <ctype.h> /* Used for isupper() and islower() */
 
-  int main()
+int main()
+
 {
-	    char ch;
 
-	        /* Input character from user */
-	        printf("Enter any character: ");
-		    scanf("%c", &ch);
+    char ch;
 
-		        if(isupper(ch))
-				    {
-					            printf("'%c' is uppercase alphabet.", ch);
-						        }
-			    else if(islower(ch))
-				        {
-						        printf("'%c' is lowercase alphabet.", ch);
-							    }
-			        else
-					    {
-						            printf("'%c' is not an alphabet.", ch);
-							        }
+    /* Input character from user */
 
-				    return 0;
+    printf("Enter any character: ");
+
+    scanf("%c", &ch);
+
+    if(isupper(ch))
+
+    {
+
+        printf("'%c' is uppercase alphabet.", ch);
+
+    }
+
+    else if(islower(ch))
+
+    {
+
+        printf("'%c' is lowercase alphabet.", ch);
+
+    }
+
+    else
+
+    {
+
+        printf("'%c' is not an alphabet.", ch);
+
+    }
+
+    return 0;
+
 }
